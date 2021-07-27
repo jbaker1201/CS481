@@ -8,50 +8,70 @@
     <title>Utilty_Consumption</title>
     <link rel="stylesheet" href="Home Page.css">
 </head>
-<button id="signin">Sign In</button>
-<h1>American Extrusion</h1>
-<h2>Utility Consumption Estimation Tool</h1>
 
-    <body>
-        <h3>Make Selections from options below
-</h2>
-<label for="Country">Country</label>
-<select name="Country" id="Country">
-    <option value="Blank"></option>
-    <option value="USA">USA</option>
 
-</select>
+<body>
+    <div id="movesign">
+        <button id="signin">Sign in</button>
+    </div>
 
-<label for="Machine">Machine</label>
-<select name="Machine" id="Machine">
-    <option value="Blank"></option>
-    <option value="Extruder">Extruder</option>
+    <h1>American Extrusion</h1>
+    <h2>Utility Consumption Estimation Tool</h2>
+    <h3>Choose From Options Below</h3>
 
-</select>
+    <p id="table">
+        <label for="Country">Country</label>
+        <select name="Country" id="Country">
+            <option value="Blank"></option>
+            <option value="USA">USA</option>
 
-<label for="Auxiliary">Auxiliary</label>
-<select name="Auxiliary" id="Auxiliary">
-    <option value="None">None</option>
-    <option value="Conveyor">Conveyor</option>
+        </select>
 
-</select>
+        <label for="Machine">Machine</label>
+        <select name="Machine" id="Machine">
+            <option value="Blank"></option>
+            <option value="Extruder">Extruder</option>
 
-<button>Add</button>
+        </select>
 
-<div>
-    <table>
-        <thead>
-            <tr>
-                <th>Machine</th>
-                <th>Voltage</th>
-                <th>Amperage</th>
-                <th>Full Load Amperage (FLA)</th>
-                <th>Kilowatts (KW)</th>
-                <th>Kilovolts Amperage (KVA)</th>
-            </tr>
-        </thead>
-    </table>
-</div>
+        <label for="Auxiliary">Auxiliary</label>
+        <select name="Auxiliary" id="Auxiliary">
+            <option value="None">None</option>
+            <option value="Conveyor">Conveyor</option>
+
+        </select>
+
+        <button>Add</button>
+    </p>
+
+
+    <div>
+        <table class="estimation">
+            <thead>
+                <tr id="header_row">
+                    <th>Machine</th>
+                    <th>Voltage</th>
+                    <th>Amperage</th>
+                    <th>Full Load Amperage (FLA)</th>
+                    <th>Kilowatts (KW)</th>
+                    <th>Kilovolts Amperage (KVA)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="data_row">
+                    <th>-</th>
+                    <th>-</th>
+                    <th>-</th>
+                    <th>-</th>
+                    <th>-</th>
+                    <th>-</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
 
 
 
