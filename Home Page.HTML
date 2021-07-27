@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Title of page-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utility Consumption Estimation Tool</title>
+</head>
+
+<!--Sign in popup window-->
+<div class="sign_in" id="sign_in">
+    <div class="overlay"></div>
+    <div class="content">
+    </div>
+</div>
+</div>
+<button onclick="Sign_in()">Sign in</button>
+
+
+<!--Body of page-->
+
+<body>
+    <h1><b>American Extrusion</b></h1>
+    <h2><b>Utility Consumption Estimation Tool</b></h2>
+
+    <P>Please select from the following options below</P>
+
+    <!--Calculation form-->
+    <form action="/calculate">
+        <P>
+            <label for="">Country</label>
+            <select name="Country" id="Country">
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="BLANK">BLANK</option>
+                <option value="BLANK">BLANK</option>
+            </select>
+
+            <label for="">Machine</label>
+            <select name="machine" id="Machine">
+                <option value="Extuder">Extruder</option>
+                <option value="Oven">Oven</option>
+                <option value="Fryer">Fryer</option>
+                <option value="Melt tank">Melt Tank</option>
+            </select>
+
+            <label for="">Auxiliary</label>
+            <select name="Auxiiliary" id="Auxiliary">
+                <option value="None">None</option>
+                <option value="Conveyor">Conveyor</option>
+                <option value="Fryer">Fryer</option>
+                <option value="Melt tank">Melt Tank</option>
+            </select>
+            <!--Add more machines-->
+            <button type="button">Add</button>
+        </P>
+        <!--Specification table-->
+        <table>
+            <thead>
+                <TR>
+                    <th>Machine</th>
+                    <th>Voltage</th>
+                    <th>Amperage</th>
+                    <th>Full Load Amps (FLA)</th>
+                    <th>Kilowatts (KW)</th>
+                    <th>Kilovolt Amperage (KVA)</th>
+                </TR>
+            </thead>
+        </table>
+        <div><button>Calculate</button></div>
+
+    </form>
+
+</body>
+
+</html>
